@@ -1,0 +1,10 @@
+venv
+*.pyc
+__pycache__
+**/.idea
+**/.vscode
+**/.pytest_cache
+**/.ipynb*
+**/*.mp4
+**/*.rdb
+versions
