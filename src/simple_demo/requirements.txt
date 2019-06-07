@@ -1,0 +1,8 @@
+celery[redis]
+Flask
+watchdog
+flower
+glances
+parameterized
+pytest
+graphviz
