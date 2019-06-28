@@ -20,7 +20,7 @@ services:
 
   celery-worker-process-video:
     build: .
-    command: celery worker -A worker --loglevel=info -Q celery
+    command: celery worker -A worker --loglevel=info  --concurrency=1 -Q celery
     volumes:
     - '.:/usr/src/app'
     depends_on:

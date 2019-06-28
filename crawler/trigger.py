@@ -1,10 +1,10 @@
-from .spider import *
+from spider import *
 import re
 from urllib.parse import *
 
 
 # crawl_url.delay("https://en.wikipedia.org/wiki/Transmission_Control_Protocol").get()
-# crawl_url.delay("https://en.wikipedia.org/wiki/Transmission_Control_Protocol").get()
+# crawl_url.delay("https://en.wikipedia.org/wiki/French_cuisine").get()
 
 
 def get_subject(wiki_url):
@@ -30,3 +30,7 @@ def wiki_to_file(filename):
             if subject is not None and ":" not in subject:
                 line = [subject] + lks
                 f.write(",".join(line) + "\n")
+
+
+
+wiki_to_file('test.wiki.csv')

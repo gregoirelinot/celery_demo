@@ -7,4 +7,3 @@ WORKDIR ${workdir}
 CMD mkdir -p ${workdir}
 ADD . ${workdir}
 RUN pip install -r requirements.txt
-
